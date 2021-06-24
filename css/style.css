@@ -60,6 +60,12 @@
     background-color: green;
 }
 
+/* if empty do not display banners */
+.discount:empty,
+.sustainability:empty{
+    display: none;
+}
+
 
 /* heart container */
 .shop_container .heart_box{
