@@ -22,6 +22,7 @@
 /* images styles */
 .shop_container .product img{
     width: 100%;
+    cursor: pointer;
 }
 
 .img2{
@@ -70,11 +71,13 @@
 /* heart container */
 .shop_container .heart_box{
     position: absolute;
-    background-color: white;
     font-size: 1.5rem;
     top: 15px;
     right: 5px;
+
+    cursor: pointer;
     padding: .5rem 1rem;
+    background-color: white;
 }
 
 /* product description */
@@ -87,6 +90,11 @@
     font-weight: 600;
     font-size: 1.25rem;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.shop_container .product_name:hover{
+    text-decoration: underline;
 }
 
 .shop_container .price{
