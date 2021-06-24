@@ -5,7 +5,7 @@
 }
 
 .shop_container{
-    width: 50%;
+    width: 60%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -15,12 +15,28 @@
     position: relative;
     padding: 5px;
     width: calc(100% / 3);
+    margin: 1rem 0;
 }
 
-/* images styles + hover effect */
+
+/* images styles */
 .shop_container .product img{
     width: 100%;
 }
+
+.img2{
+    display: none;
+}
+
+/* images hover effect */
+.image_wrapper:hover .img1{
+    display: none;
+}
+
+.image_wrapper:hover .img2{
+    display: inline-block;
+}
+
 
 /* discount container */
 .shop_container .discount_container{
@@ -30,18 +46,29 @@
 }
 
 .shop_container .discount_container span{
-    background-color: blue;
     color: white;
     padding: .25rem .5rem;
+    text-transform: capitalize;
+    font-size: .75rem;
 }
+
+.discount_container .discount{
+    background-color: red;
+}
+
+.discount_container .sustainability{
+    background-color: green;
+}
+
 
 /* heart container */
 .shop_container .heart_box{
     position: absolute;
-    background-color: blueviolet;
-    top: 5px;
+    background-color: white;
+    font-size: 1.5rem;
+    top: 15px;
     right: 5px;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 /* product description */
