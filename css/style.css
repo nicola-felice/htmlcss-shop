@@ -3,3 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.shop_container{
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.shop_container .product{
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    width: calc(100% / 3);
+}
+
+/* images styles + hover effect */
+.shop_container .product img{
+    width: 100%;
+}
+
+/* discount container */
+.shop_container .discount_container{
+    position: absolute;
+    bottom: 18%;
+    left: 5px;
+}
+
+.shop_container .discount_container span{
+    background-color: blue;
+    color: white;
+    padding: .25rem .5rem;
+}
+
+/* heart container */
+.shop_container .heart_box{
+    position: absolute;
+    background-color: blueviolet;
+    top: 5px;
+    right: 5px;
+    padding: 1rem;
+}
+
+/* product description */
+.shop_container .brand{
+    text-transform: capitalize;
+    font-size: .75rem;
+}
+
+.shop_container .product_name{
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.shop_container .price{
+    color: red;
+    font-size: .85rem;
+    font-weight: 900;
+}
+
+.shop_container .non_discounted_price{
+    color: black;
+    margin-left: 10px;
+    text-decoration-line: line-through;
+}
